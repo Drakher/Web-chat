@@ -9,7 +9,7 @@ export default function Join({ setChatVisibility, setSocket }) {
     const username = usernmRef.current.value.trim();
     if (!username) return;
 
-    const socket = await io.connect('http://localhost:5001');
+    const socket = await io.connect('web-chat-production-4bf4.up.railway.app');
     socket.emit('set_username', username);
     setSocket(socket);
     setChatVisibility(true);
