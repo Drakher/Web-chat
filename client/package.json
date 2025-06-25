@@ -7,7 +7,6 @@
     "vercel-build": "npm install --legacy-peer-deps && npm run build",
     "build": "react-scripts build",
     "dev": "vite",
-    //"build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
