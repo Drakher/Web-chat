@@ -1,7 +1,11 @@
 const app = require('express')();
 const server = require('http').createServer(app);
 const io = require('socket.io')(server, {
-  cors: { origin: 'https://web-chat-production-4bf4.up.railway.app' }
+  cors: {
+    origin: 'https://web-chat-navy-five.vercel.app',
+    methods: ['GET', 'POST'],
+    credentials: true
+  }
 });
 
 const PORT = process.env.PORT || 5001;
